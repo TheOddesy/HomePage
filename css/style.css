@@ -27,7 +27,8 @@
 }
 
 [data-theme="dark"]  {
-  --main: #f8ac20 ;
+  /* --main: #f8ac20; */
+  --main: #d86508;
   --mainText: #e7e7e7 ;
   --secondaryText: #acacac; 
   --background: #303a49;
@@ -143,7 +144,6 @@ a {
 .topnav a:hover {
   color: var(--main);
 }
-
 
 .homeButton .fa {
   margin: 10px 0px 10px 0px;
@@ -359,9 +359,6 @@ a {
   transform: translate(-50%, -50%);
 }
 
-
-
-
 /* ------------------------------------------- */
 
 .contact h4 { 
@@ -381,7 +378,6 @@ a {
   justify-content: center;
 }
 
-/* Style all font awesome icons */
 .contact .fa {
   padding: 20px;
   width: 30px;
@@ -395,8 +391,6 @@ a {
   margin: 10px;
 }
 
-
-/* Add a hover effect if you want */
 .contact .fa:hover {
   color: var(--background);
   background-color: var(--main);
