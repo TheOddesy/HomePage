@@ -24,7 +24,8 @@
   --secondaryText:#5d5c61; 
   --background: #ececec;
   --greyBackground: #e2e2e2;
-  --shadows: rgba(0, 0, 0, 0.5);
+  --projectShadow: rgba(0, 0, 0, 0.5);
+  --otherShadow: rgba(0, 0, 0, 0);
 }
 
 [data-theme="dark"]  {
@@ -33,7 +34,8 @@
   --secondaryText: #acacac; 
   --background: #303a49;
   --greyBackground: #3a3a3a;
-  --shadows: #f8ac2080;
+  --projectShadow: #f8ac2080;
+  --otherShadow: #f8ac2080;
 }
 
 /* ------------------------------------------- */
@@ -138,12 +140,18 @@ a {
   font-size: 1.2em;
   color: var(--mainText);
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 5px 10px;
   float: left;
+  border: 2px solid var(--background);
+  margin: 10px 10px;
 }
 
 .topnav a:hover {
   color: var(--main);
+  padding: 5px 10px;
+  border: 2px solid var(--main);
+  margin: 10px 10px;
+  box-shadow: 0 0px 5px 1px var(--otherShadow);
 }
 
 .homeButton .fa {
@@ -176,8 +184,8 @@ a {
 .homeButton a:hover {
   background-color: var(--main);
   color: var(--background);
-  transition-duration: 100ms;
-  transition-delay: 100ms;
+  transition-delay: 0.05s;
+  transition-duration: 0.1s;
 }
 
 /* ------------------------------------------- */
@@ -273,7 +281,7 @@ a {
 }
 
 .project:hover {
-  box-shadow: 0 2px 15px 1px var(--shadows);
+  box-shadow: 0 2px 15px 1px var(--projectShadow);
   transition-delay: 0.2;
   transition: 0.2s;
   background-color: var(--background);
@@ -397,7 +405,7 @@ a {
 .contact .fa:hover {
   color: var(--background);
   background-color: var(--main);
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
   transition-duration: 0.1s;
 }
 
