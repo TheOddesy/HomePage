@@ -122,21 +122,37 @@ a {
 
 /* ------------------------------------------- */
 
-.nav {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--background);
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2); 
+  z-index: 1;
+  }
+  
+.progress-container {
+  width: 100%;
+  height: 2px;
+  background: var(--background);
+}
+
+.progress-bar {
+  height: 2px;
+  background: var(--main);
+  width: 0%;
+}
+
+/* -------- */
+.navContainer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2); 
-  /* border-bottom: 2px solid var(--main); */
-  z-index: 2;
-  }
+}
 
-.topnav a {
+/* -------- */
+.nav a {
   font-size: 1.2em;
   color: var(--mainText);
   text-decoration: none;
@@ -146,7 +162,7 @@ a {
   margin: 10px 10px;
 }
 
-.topnav a:hover {
+.nav a:hover {
   color: var(--main);
   padding: 5px 10px;
   border: 2px solid var(--main);
@@ -154,30 +170,42 @@ a {
   box-shadow: 0 0px 5px 1px var(--otherShadow);
 }
 
-.homeButton .fa {
-  margin: 10px 0px 10px 0px;
+/* -------- */
+.floatRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+}
+
+.switchButtons {
+  display: flex;
+  align-items: center;
+  float: right;
+  font-size: 1rem;
+}
+
+.switchButtons .fa {
+  margin: 10px 5px 10px 5px;
   border: none;
   color: var(--main);
   background-color: var(--background);
+  
 }
 
-.homeButton .fa:hover {
+.switchButtons .fa:hover {
   color: var(--main);
   background-color: var(--background);
 }
 
-.homeButton{
-  display: flex;
-  align-items: center;
-}
-
+/* -------- */
 .homeButton a{
   text-decoration: none;
   padding: 5px;
   border: 2px solid var(--main);
   margin: 10px 50px 10px 100px;
   color: var(--main);
-  float: right;
+  
   font-size: 1.2em;
 }
 
@@ -187,6 +215,8 @@ a {
   transition-delay: 0.05s;
   transition-duration: 0.1s;
 }
+
+
 
 /* ------------------------------------------- */
 
@@ -259,6 +289,7 @@ a {
   color: var(--background);
 }
 
+/* -------- */
 .projectContent {
   display:flex;
   flex-wrap: wrap;
@@ -271,13 +302,12 @@ a {
   max-height: 500px;
   max-width: 500px;
   background-color: var(--background);
-  /* border: 3px solid var(--main); */
   margin: 15px;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
   padding: 20px 20px 20px 20px;
   position: relative;
   border: 3px solid var(--background);
-  z-index: 1;
+  z-index: 0;
 }
 
 .project:hover {
@@ -288,6 +318,7 @@ a {
   border: 3px solid var(--main);
 }
 
+/* -------- */
 .project img {
   max-width: 100%;
   border:1px solid #ccc;
@@ -324,6 +355,7 @@ a {
   right: 10px;
 }
 
+/* -------- */
 .project .fa {
   text-decoration: none;
   color: var(--main);
@@ -352,6 +384,7 @@ a {
   padding: 2px 4px;
 }
 
+/* -------- */
 .commingSoon{
   color: var(--main);
   background-color: var(--background);
