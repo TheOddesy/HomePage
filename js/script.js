@@ -16,10 +16,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 
-
-
-
-
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
