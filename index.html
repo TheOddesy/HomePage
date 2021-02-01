@@ -18,18 +18,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
   <script src="js/script.js"></script>
-
 </head>
 
 
 <body>
-
   <!-- --------------------------------------------------------------------- -->
 
   <div class="header">
   
-    <div class="navContainer">
-  
+    <div class="navContainer">  
+      
+      <div class="navDropdown">
+        <!-- <i class="fa fa-bars"></i> -->
+        <!-- ≡ -->
+        <button onclick="dropDownMenu()" class="dropbtn">≡</button>
+         <div id="myDropdown" class="dropdown-content">            
+           <a href="#aboutMe">About Me</a>
+          <a href="#myProjects">My Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+
       <div class="nav">
         <a href="#aboutMe">About Me</a>
         <a href="#myProjects">My Projects</a>
@@ -92,28 +102,63 @@
     <div class="projectContent">
 
       <!-- --------------------------------- -->
+      <!-- Template for next project -->
+      <!-- <div class="project">
+        
+        <a href="https://theoddesy.github.io/" target="_blank" rel="noopener"><img src=""></a>
+        
+        <a href="https://theoddesy.github.io/" target="_blank" rel="noopener"><h3>Title of project</h3></a>
+        
+        <p>Description</p>
+        
+        <h4>HTML | CSS | JavaScript</h4>
+        
+        <div class="githubButton">
+          <a href="https://github.com/TheOddesy/" class="fa fa-github fa-1x" target="_blank" rel="noopener"><div class="github">GITHUB</div></a>
+        </div>
+      </div> -->
+
+      <!-- --------------------------------- -->
+      <!-- Home Page -->
       <div class="project">
+        <!-- Picture -->
+        <a href="javascript:;"  rel="noopener"><img src="img/projects/nico_vit-svart.png"></a>
+        <!-- Title -->
+        <a href="javascript:;"  rel="noopener"><h3>Personal Home Page</h3></a>
+        <!-- Description -->
+        <p>The page where we are right now. A place to gather all of the web based projects that I work on. Simple architecture in the back and as little javascript as possible to hone my CSS skills.</p>
+        <!-- Technologies Used -->
+        <h4>HTML | CSS | JavaScript</h4>
+        <!-- Githug Link -->
+        <div class="githubButton">
+          <a href="https://github.com/TheOddesy/HomePage" class="fa fa-github fa-1x" target="_blank" rel="noopener"><div class="github">GITHUB</div></a>
+        </div>
+      </div>
+
+      <!-- --------------------------------- -->
+      <!-- GAME OF LIFE -->
+      <div class="project">
+        <!-- Picture -->
         <a href="https://theoddesy.github.io/GameOfLifeWASM/" target="_blank" rel="noopener"><img src="img/projects/gameOfLife2.png" alt="Image of Conway's Game of Life"></a>
+        <!-- Title -->
         <a href="https://theoddesy.github.io/GameOfLifeWASM/" target="_blank" rel="noopener"><h3>Conway's Game of Life</h3></a>
-      
+        <!-- Description -->
         <p>Implementation of Conway's Game of Life as a test of Blazor WebAssembly.</p>
+        <!-- Technologies Used -->
         <h4>Blazor | WebAssembly | .NET | C#</h4>
+        <!-- Githug Link -->
         <div class="githubButton">
           <a href="https://github.com/TheOddesy/GameOfLifeSource" class="fa fa-github fa-1x" target="_blank" rel="noopener"><div class="github">GITHUB</div></a>
         </div>
       </div>
-      <!-- --------------------------------- -->
 
+      <!-- --------------------------------- -->
+      <!-- Comming soon placeholder -->
       <div class="project">
         <div class="commingSoon"> New Project <br>Comming Soon...  </div> 
       </div>
 
       <!-- --------------------------------- -->
-      <!-- <div class="project">
-        <p>&nbsp</p>
-      </div> -->
-     
-
     </div>
   </div>
 
@@ -122,8 +167,9 @@
   <div id="contact" class="contact">
     <h4>Contact</h4>
     <div class="sites">
-      <a href="https://www.linkedin.com/in/nicolassalasurbano/" class="fa fa-linkedin fa-2x" target="_blank"></a>
-      <a href="mailto:nicolas.salas.urbano@gmail.com" target="_blank" class=" fa fa-envelope fa-2x"></a>
+      <a href="https://www.linkedin.com/in/nicolassalasurbano/" class="fa fa-linkedin fa-2x" target="_blank" rel="noopener"></a>
+      <a href="mailto:nicolas.salas.urbano@gmail.com" class=" fa fa-envelope fa-2x" target="_blank" rel="noopener"></a>
+      <a href="https://github.com/TheOddesy" class=" fa fa-github fa-2x" target="_blank" rel="noopener"></a>
     </div>
   </div>
 

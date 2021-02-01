@@ -16,11 +16,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
+// When scrolling the function will activate to update the scroll bar
+window.onscroll = function() {scrollbBar()};
+function scrollbBar() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function dropDownMenu() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
