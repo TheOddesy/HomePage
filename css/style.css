@@ -26,6 +26,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   background-color: var(--background);
+  margin:0;
 }
 
 a {
@@ -122,11 +123,30 @@ a {
 
 }
 
+.projectsContentWidth{
+  width:fit-content;
+  margin:0;
+}
+
+.contentWidth{
+  width:100vw;
+  margin:auto;
+}
+
 /* When screen is bigger than 950 px */
 @media (min-width: 950px) {
   .navDropdown {
     display: none;
   }
+  .projectsContentWidth{
+    width:100%;
+    margin: auto;
+  }
+  .contentWidth{
+    width:100%;
+    margin: auto;
+  }
+
 }
 
 /* ------------------------------------------- */
@@ -300,9 +320,10 @@ input:checked + .slider:before {
 .intro {
   max-width: 600px;
   min-width: 400px;
+  
   border: 4px solid var(--main);
   padding: 10px 35px;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0;
 }
 
 .intro h1 {
@@ -332,10 +353,9 @@ input:checked + .slider:before {
 /* ------------------------------------------- */
 
 .aboutMe {
-  max-width: 600px;
+  max-width: 550px;
   min-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin:50px auto;
   color: var(--mainText);
 }
 
@@ -352,12 +372,9 @@ input:checked + .slider:before {
 }
 
 /* ------------------------------------------- */
-
 .projectTitle {
-  max-width: 600px;
-  min-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 550px;
+  margin: auto;
 }
 
 .myProjects H2 {
@@ -491,16 +508,14 @@ input:checked + .slider:before {
 }
 
 /* ------------------------------------------- */
-
-.contact h4 { 
+.contact h4{ 
   background-color: var(--main);
   color: var(--background);
   font-size: 1.5em;
   padding: 5px;
   align-content: center;
   width:fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .sites {
@@ -513,12 +528,12 @@ input:checked + .slider:before {
   padding: 20px;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   text-align: center;
   text-decoration: none;
   color: var(--main);
   background-color: var(--background);
   border: 2px solid var(--main);
-  border-radius: 50%;
   margin: 10px;
   font-size: 2rem;
 }
@@ -533,8 +548,6 @@ input:checked + .slider:before {
 /* ------------------------------------------- */
 
 .footer {
-  width:fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   color: var(--mainText);
 }
