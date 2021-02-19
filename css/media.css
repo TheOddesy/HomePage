@@ -6,16 +6,12 @@
     }
     .projectsContentWidth{
       width:100%;
-      margin: auto;
     }
     .contentWidth{
       width:100%;
-      margin: auto;
     }
   
   }
-
-  /* ------------------------------------------- */
 
   /* When screen is smaller than 950 px */
   @media (max-width: 950px) {
@@ -25,6 +21,11 @@
       margin:0;
     }
     
+    .contentContainer{
+      display: flex;
+      margin: 0 10px;
+    }
+
     .contentWidth{
       width:100vw;
       margin:0 auto;

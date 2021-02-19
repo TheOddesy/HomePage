@@ -6,25 +6,30 @@
     /* --background: #ececec; */
     --background: #e7e7e7;
 
+    --headerBackground:#e7e7e7;
+    --projectBackground: #e7e7e7;
 
     --shadowProject: rgba(0, 0, 0, 0.5);
     --shadowNav: rgba(0, 0, 0, 0);
     --shadowDropDownGlobal: rgba(0, 0, 0, 0.15);
+    --switch-background-light:#ccc;
   }
 
   [data-theme="dark"]  {
     --main: #f8ac20;
     --mainText: #e7e7e7;
     --secondaryText: #acacac;
-    --background: #303a49;
-    
-    /* --background: #171D23; */
-    /* --background: #0f2133; */
-    /* --background: #772c2c; */
+    /* --background: #303a49; */
+    --background: #171D23; 
 
+    --headerBackground:#1d242b;
+    --projectBackground:#1d242b;
+    
     --shadowProject: #f8ac2080;
     --shadowNav: #f8ac2080;
     --shadowDropDownGlobal: rgba(0, 0, 0, 0.25);
+    --switch-background-dark:#5a5a5a;
+    --switch-background-dark:#535353;
   }
 
   body {
@@ -48,12 +53,16 @@
   .fa {
       text-decoration: none;
       color: var(--main);
-      background: var(--background);
+      background: var(--projectBackground);
   }
 
   .fa:hover {
     text-decoration: none;
-    color: var(--background);
+    color: var(--projectBackground);
     background: var(--main);
     cursor: pointer;
+}
+
+#anchor {
+  scroll-margin-top: 500px;
 }

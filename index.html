@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/intro-about-me.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contact-and-footer.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/png" href="img/home-2x.png" />
 
@@ -47,11 +47,11 @@
           <a href="#contact">Contact</a>
         </div>
       </div>
-
+      
 
       <div class="nav">
-        <a href="#aboutMe">About Me</a>
-        <a href="#myProjects">My Projects</a>
+        <a onclick="offsetAnchor()" href="#aboutMe">About Me</a>
+        <a onclick="offsetAnchor()" href="#myProjects">My Projects</a>
         <a href="#contact">Contact</a>
       </div>
   
@@ -77,43 +77,43 @@
       <div class="progress-bar" id="myBar"></div>
     </div>
   
-  
-  </div>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-  <!-- --------------------------------------------------------------------- -->
-
-  <div class="intro">
-    <div class="intro-line1">
-      <h1>Hi, my name is Nicolás Salas.</h1>
-    </div>
-    <div class="intro-line2">
-      <h1>I'm a <span class="software"> software engineer</span></h1>
-    </div>
-    <div class="intro-line3">
-      <h1>I like designing and building things on the internet.</h1>
-    </div>
   </div>
 
   <!-- --------------------------------------------------------------------- -->
 
-  <div id="aboutMe" class="aboutMe">
-    <h2>About Me</h2>
-    <p>I'm a software developer with a passion for webdesign. I have a degree in computer engineering with a masters in
-      interaction design from Lund University.</p>
-    <p>Below follows a collection of projects I work on my free time, everything from simple games to websites for other
-      people. The website gets updated regularly.</p>
+  <div class="contentContainer">
+    <div class="contentWidth">
+  
+      <div class="intro">
+        <div class="intro-line1">
+          <h1>Hi, my name is Nicolás Salas</h1>
+        </div>
+        <div class="intro-line2">
+          <h1>I'm a <span class="software"> software engineer</span></h1>
+        </div>
+        <div class="intro-line3">
+          <h1>I like designing and building things on the internet</h1>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- --------------------------------------------------------------------- -->
+  <div class="contentContainer">
+    <div class="contentWidth">
+  
+      <div id="aboutMe" class="aboutMe">
+        <h2>About Me</h2>
+        <p>I'm a software developer with a passion for webdesign. I have a degree in computer engineering with a masters
+          in
+          interaction design from Lund University.</p>
+        <p>Below follows a collection of projects I work on my free time, everything from simple games to websites for
+          other
+          people. The website gets updated regularly.</p>
+      </div>
+  
+    </div>
   </div>
 
   <!-- --------------------------------------------------------------------- -->
@@ -227,7 +227,6 @@
   </div>
 
   <!-- --------------------------------------------------------------------- -->
-
   <footer>
     <div class="footer contentWidth">
       <p>Built & Designed by me</p>

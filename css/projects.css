@@ -1,10 +1,10 @@
-  /* PROJECT PROJECT PROJECT PROJECT PROJECT ------------------------------------------- */
+  /* Project */
   .projectTitle {
     max-width: 550px;
     margin: auto;
   }
   
-  /* -------- */
+  /* Project holder */
   .projectContent {
     display:flex;
     flex-wrap: wrap;
@@ -12,13 +12,15 @@
   }
   
   .project {
+    background-color: var(--projectBackground);
     min-height: 500px;
     max-height: 1000px;
     width: 500px;
     min-width: 200px;
     padding: 20px;
     margin: 15px;
-    border: 3px solid var(--background);
+    border: 2px solid transparent;
+    border-radius: 10px;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 0;
@@ -28,10 +30,10 @@
     box-shadow: 0 2px 15px 1px var(--shadowProject);
     transition-delay: 0.2;
     transition: 0.2s;
-    border: 3px solid var(--main);
+    border: 2px solid var(--main);
   }
   
-  /* -------- */
+  /* Project content */
   .project img {
     max-width: 100%;
     border:1px solid #ccc;
@@ -46,7 +48,6 @@
   
   .project h3 {
     color: var(--main);
-    background-color: var(--background);
     font-size: 1.3rem;
     margin: 10px 0px;
   }
@@ -59,7 +60,7 @@
     margin: 0px;
   }
   
-  /* -------- */
+  /* Project content - last row */
 
   .project-tech-container {
     display: flex;
@@ -72,6 +73,7 @@
   }
 
   .project .github-button a {
+    /* background-color: var(--projectBackground); */
     border: 2px var(--main) solid;
     padding: 2px 4px;
     margin: 5px 10px 5px 20px;
@@ -87,12 +89,11 @@
 
   .project h4 {
     color: var(--secondaryText);
-    background-color: var(--background);
     margin: 5px 20px 5px 10px ;
     font-weight: 700;
   }
   
-  /* -------- */
+  /* Comming soon placeholder card */
   .comming-soon{
     color: var(--main);
     width: fit-content;
