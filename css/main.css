@@ -1,0 +1,59 @@
+
+:root {
+    --main: #900C3F ;
+    --mainText: Black;
+    --secondaryText:#5d5c61;
+    /* --background: #ececec; */
+    --background: #e7e7e7;
+
+
+    --shadowProject: rgba(0, 0, 0, 0.5);
+    --shadowNav: rgba(0, 0, 0, 0);
+    --shadowDropDownGlobal: rgba(0, 0, 0, 0.15);
+  }
+
+  [data-theme="dark"]  {
+    --main: #f8ac20;
+    --mainText: #e7e7e7;
+    --secondaryText: #acacac;
+    --background: #303a49;
+    
+    /* --background: #171D23; */
+    /* --background: #0f2133; */
+    /* --background: #772c2c; */
+
+    --shadowProject: #f8ac2080;
+    --shadowNav: #f8ac2080;
+    --shadowDropDownGlobal: rgba(0, 0, 0, 0.25);
+  }
+
+  body {
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    background-color: var(--background);
+    color: var(--mainText);
+    margin:0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  .fa {
+      text-decoration: none;
+      color: var(--main);
+      background: var(--background);
+  }
+
+  .fa:hover {
+    text-decoration: none;
+    color: var(--background);
+    background: var(--main);
+    cursor: pointer;
+}

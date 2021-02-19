@@ -1,0 +1,48 @@
+  /* INTRO INTRO INTRO INTRO INTRO ------------------------------------------- */
+
+  .intro {
+    max-width: 600px;
+    min-width: 400px;
+    border: 4px solid var(--main);
+    padding: 10px 35px;
+    margin: 100px auto 0;
+  }
+  
+  .intro-line1 h1 {
+    font-size: 2em;
+    font-weight: 800;
+  }
+  
+  .intro-line2 h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
+  .software {
+    color: var(--background);
+    background: var(--main);
+    padding: 0px 5px;
+  }
+  
+  .intro-line3 h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--secondaryText);
+  }
+  
+  /* ABOUT ME ABOUT ME ABOUT ME ABOUT ME ------------------------------------------- */
+  
+  .aboutMe {
+    max-width: 550px;
+    min-width: 400px;
+    margin:50px auto;
+  }
+
+  /* For the dividing titles */
+  h2 { 
+    color: var(--background);
+    background-color: var(--main);
+    font-size: 1.5em;
+    width: fit-content;
+    padding: 5px;
+  }

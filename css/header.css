@@ -1,0 +1,89 @@
+  /* HEADER HEADER HEADER HEADER HEADER HEADER ------------------------------------------- */
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background);
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    z-index: 1;
+    }
+  
+  /* -------- */
+  .navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* -------- */
+  
+  .nav a {
+    font-size: 1.2em;
+    color: var(--mainText);
+    border: 2px solid var(--background);
+    padding: 5px 10px;
+    margin: 10px 10px;
+    float: left;
+  }
+  
+  .nav a:hover {
+    color: var(--main);
+    border: 2px solid var(--main);
+    box-shadow: 0 0px 5px 1px var(--shadowNav);
+    padding: 5px 10px;
+    margin: 10px 10px;
+  }
+  
+  /* -------- */
+  .floatRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 40px 0 30px;
+  }
+  
+  .switchButtons {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .switchButtons .fa {
+    color: var(--main);
+    background-color: var(--background);
+    margin: 10px 5px 10px 5px;
+  }
+  
+  /* -------- */
+  .homeButton a{
+    color: var(--main);
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid var(--main);
+    font-size: 1.2em;
+  }
+  
+  .homeButton a:hover {
+    color: var(--background);
+    background-color: var(--main);
+    transition-delay: 0.05s;
+    transition-duration: 0.1s;
+  }
+
+  /* -------- */
+
+  .progress-container {
+    width: 100%;
+    height: 2px;
+    background: var(--background);
+  }
+  
+  .progress-bar {
+    height: 2px;
+    background: var(--main);
+    width: 0%;
+  }

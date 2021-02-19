@@ -13,8 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
   <meta name="viewport" content="width=device-width" />
 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/switch.css">
+  <link rel="stylesheet" href="css/intro-about-me.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact-and-footer.css">
   
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/png" href="img/home-2x.png" />
 
@@ -34,8 +40,7 @@
     <div class="navContainer">  
       
       <div class="navDropdown">
-
-        <button onclick="dropDownMenu()" class="dropbtn-part dropbtn"><i class="fa fa-bars dropbtn-part"></i></button>
+        <button onclick="dropDownMenu()" class="dropbtn-part dropbtn fa fa-bars fa-2x" style="font-size: 1.8rem;"></button>
          <div id="myDropdown" class="dropdown-content">            
            <a href="#aboutMe">About Me</a>
           <a href="#myProjects">My Projects</a>
@@ -76,12 +81,29 @@
   </div>
 
   
+
+
+
+
+
+
+
+
+
+
+
   <!-- --------------------------------------------------------------------- -->
 
   <div class="intro">
-    <h1>Hi, my name is Nicolás Salas.</h1>
-    <h2>I'm a <span class="software"> software engineer</span></h2>
-    <h3>I like designing and building things on the internet.</h3>
+    <div class="intro-line1">
+      <h1>Hi, my name is Nicolás Salas.</h1>
+    </div>
+    <div class="intro-line2">
+      <h1>I'm a <span class="software"> software engineer</span></h1>
+    </div>
+    <div class="intro-line3">
+      <h1>I like designing and building things on the internet.</h1>
+    </div>
   </div>
 
   <!-- --------------------------------------------------------------------- -->
@@ -96,9 +118,8 @@
 
   <!-- --------------------------------------------------------------------- -->
 
-  <div id="myProjects" class="myProjects projectsContentWidth">
-    <div class="projectTitle">
-      
+  <div id="myProjects" class="myProjects  projectsContentWidth">
+    <div class="projectTitle"> 
       <h2>My Projects</h2>
     </div>
     
@@ -110,7 +131,7 @@
         <a href="https://theoddesy.github.io/" target="_blank" rel="noopener"><h3>Title of project</h3></a>
         <p>Description</p>
         <div class="project-tech-container">
-          <div class="githubButton">
+          <div class="github-button">
             <a href="https://github.com/TheOddesy/" class="fa fa-github fa-1x" target="_blank" rel="noopener">
               <div class="github">GITHUB</div>
             </a>
@@ -124,10 +145,10 @@
       <div class="project">
         <a href="https://cssbattle.dev/" target="_blank" rel="noopener"><img src="img/projects/cssbattle.png" alt="A typical challenge at the site"></a>
         <a href="https://cssbattle.dev/" target="_blank" rel="noopener"><h3>All the challenges at CSSBattle.dev</h3></a>
-        <p>The website CSSBattle has 68 challenges for people to test their raw CSS skills. You are given points based on how close you can approximate the picture you are given to replicate and doing it in as few characters as possible. Out of 62979 people I am the proud owner of the 60th best spot.</p>
+        <p>The website CSSBattle has 68 challenges for people to test their raw CSS skills. You are given points based on how close you can approximate the picture you are given to replicate and doing it in as few characters as possible. At the time of writing there are 62979 members and I am the proud owner of the 60th best spot.</p>
         <div class="project-tech-container">
-          <div class="githubButton">
-            <a href="https://cssbattle.dev/player/theoddesy" class="fa " target="_blank" rel="noopener">
+          <div class="github-button">
+            <a href="https://cssbattle.dev/player/theoddesy" class="fa" target="_blank" rel="noopener">
               <div class="github">PROFILE PAGE</div>
             </a>
           </div>
@@ -142,7 +163,7 @@
         <a href="https://theoddesy.github.io/tic-tac-toe/" target="_blank" rel="noopener"><h3>Tic-Tac-Toe</h3></a>
         <p>The game tic-tac-toe as a react app. I wanted to do an easy project as my first react web app. This project was also a good way to play around with props and states in react. I went for an '80s feel and had fun implementing the see through glass effects.</p>
         <div class="project-tech-container">
-          <div class="githubButton">
+          <div class="github-button">
             <a href="https://github.com/TheOddesy/tic-tac-toe" class="fa fa-github fa-1x" target="_blank" rel="noopener">
               <div class="github">GITHUB</div>
             </a>
@@ -158,7 +179,7 @@
         <a href="javascript:;"  rel="noopener"><h3>Personal Home Page</h3></a>
         <p>The page where we are right now. A place to gather all of the web based projects that I work on. Simple architecture in the back and as little javascript as possible to hone my CSS skills.</p>
         <div class="project-tech-container">
-          <div class="githubButton">
+          <div class="github-button">
             <a href="https://github.com/TheOddesy/HomePage" class="fa fa-github fa-1x" target="_blank" rel="noopener">
               <div class="github">GITHUB</div>
             </a>
@@ -174,7 +195,7 @@
         <a href="https://theoddesy.github.io/GameOfLifeWASM/" target="_blank" rel="noopener"><h3>Conway's Game of Life</h3></a>
         <p>Implementation of Conway's Game of Life as a test of Blazor WebAssembly. I wanted to implement a simple game as a web app using C# so I chose Blazor.</p>
         <div class="project-tech-container">
-          <div class="githubButton">
+          <div class="github-button">
             <a href="https://github.com/TheOddesy/GameOfLifeSource" class="fa fa-github fa-1x" target="_blank" rel="noopener">
               <div class="github">GITHUB</div>
             </a>
@@ -187,7 +208,7 @@
       <!-- --------------------------------- -->
       <!-- Comming soon placeholder -->
       <div class="project">
-        <div class="commingSoon"> New Project <br>Coming Soon...  </div> 
+        <div class="comming-soon"> New Project <br>Coming Soon...  </div> 
       </div>
 
       <!-- --------------------------------- -->
@@ -197,11 +218,11 @@
   <!-- --------------------------------------------------------------------- -->
 
   <div id="contact" class="contact contentWidth">
-    <h4>Contact</h4>
+    <h2>Contact</h2>
     <div class="sites">
-      <a href="https://www.linkedin.com/in/nicolassalasurbano/" class="fa fa-linkedin fa-2x" target="_blank" rel="noopener"></a>
-      <a href="mailto:nicolas.salas.urbano@gmail.com" class="fa fa-envelope fa-2x" target="_blank" rel="noopener"></a>
-      <a href="https://github.com/TheOddesy" class="fa fa-github fa-2x" target="_blank" rel="noopener"></a>
+      <a href="https://www.linkedin.com/in/nicolassalasurbano/" class="fa fa-linkedin fa-2x " target="_blank" rel="noopener"></a>
+      <a href="mailto:nicolas.salas.urbano@gmail.com" class="fa fa-envelope fa-2x " target="_blank" rel="noopener"></a>
+      <a href="https://github.com/TheOddesy" class="fa fa-github fa-2x " target="_blank" rel="noopener"></a>
     </div>
   </div>
 
@@ -209,7 +230,6 @@
 
   <footer>
     <div class="footer contentWidth">
-      <br>
       <p>Built & Designed by me</p>
     </div>
   </footer>

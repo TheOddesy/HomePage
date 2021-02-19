@@ -1,0 +1,99 @@
+
+/* When screen is bigger than 950 px */
+  @media (min-width: 950px) {
+    .navDropdown {
+      display: none;
+    }
+    .projectsContentWidth{
+      width:100%;
+      margin: auto;
+    }
+    .contentWidth{
+      width:100%;
+      margin: auto;
+    }
+  
+  }
+
+  /* ------------------------------------------- */
+
+  /* When screen is smaller than 950 px */
+  @media (max-width: 950px) {
+
+    .projectsContentWidth{
+      width:fit-content;
+      margin:0;
+    }
+    
+    .contentWidth{
+      width:100vw;
+      margin:0 auto;
+    }
+   
+    .nav {
+      display: none;
+    }
+  
+    /* --- --- --- ---  */
+  
+    /* The container <div> - needed to position the dropdown content */
+    .navDropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    /* Dropdown Button */
+    .dropbtn {
+      width: 50px;
+      height: 50px;
+      padding: 5px 10px;
+      margin: 5px 10px;
+      border-radius: 50%;
+      border: 2px solid var(--main);
+      transition: 0.5s;
+    }
+  
+    .dropbtn:focus {
+      color: var(--background);
+      background-color: var(--main);
+      cursor: pointer;
+      transform: rotate(90deg);
+      transition: 0.5s;
+    }
+  
+    /* --- --- --- ---  */
+  
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      background-color: var(--background);
+      min-width: 180px;
+      padding: 7px 0px;
+      margin: 0 0 0 20px;
+      border: 2px solid var(--main);
+      box-shadow: 0px 8px 1500px 1500px var(--shadowDropDownGlobal);
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      z-index: 2;
+    }
+  
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      display: block;    
+      color: var(--main);
+      background-color: var(--background);
+      padding: 5px 10px;
+      margin: 3px 10px;
+      border: 2px solid var(--background);
+      font-size: 1.2em;
+    }
+  
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      border: 2px solid var(--main);
+    }
+  
+    .show {display:block;}
+
+  }

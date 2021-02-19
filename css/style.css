@@ -121,17 +121,20 @@ a {
 
   .show {display:block;}
 
+
+  .projectsContentWidth{
+    width:fit-content;
+    margin:0;
+  }
+  
+  .contentWidth{
+    width:100vw;
+    margin:0 auto;
+  }
+
 }
 
-.projectsContentWidth{
-  width:fit-content;
-  margin:0;
-}
 
-.contentWidth{
-  width:100vw;
-  margin:auto;
-}
 
 /* When screen is bigger than 950 px */
 @media (min-width: 950px) {
@@ -220,12 +223,6 @@ a {
 .switchButtons .fa {
   margin: 10px 5px 10px 5px;
   border: none;
-  color: var(--main);
-  background-color: var(--background);
-  
-}
-
-.switchButtons .fa:hover {
   color: var(--main);
   background-color: var(--background);
 }
@@ -393,9 +390,10 @@ input:checked + .slider:before {
 }
 
 .project {
-  height: 500px;
+  min-height: 500px;
+  max-height: 1000px;
   width: 500px;
-  max-width: 500px;
+  /* max-width: 500px; */
   min-width: 200px;
   background-color: var(--background);
   margin: 15px;
@@ -554,4 +552,5 @@ input:checked + .slider:before {
 .footer {
   text-align: center;
   color: var(--mainText);
+  margin: 40px auto;
 }
