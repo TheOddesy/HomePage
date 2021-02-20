@@ -1,3 +1,5 @@
+// THEME THOGGLE ---------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", function (event) {
   document.documentElement.setAttribute("data-theme", "light");
 
@@ -16,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 
-// ----------------------------------------------------------------------------
+// HORIZONTAL SCROLL BAR ---------------------------------------------
 
 // When scrolling the function will activate to update the scroll bar
 window.onscroll = function() {scrollbBar()};
@@ -27,7 +29,7 @@ function scrollbBar() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// ----------------------------------------------------------------------------
+// DROP DOWN MENU ---------------------------------------------------
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -49,15 +51,14 @@ window.onclick = function(event) {
   }
 }
 
-// ----------------------------------------------------------------------------
+// WINDOW OFFSET ---------------------------------------------------
 
+window.addEventListener("hashchange", offsetAnchor);
 
 function offsetAnchor() {
   if(location.hash.length !== 0) {
       window.scrollTo(window.scrollX, window.scrollY - 100);
   }
 }
-
-window.addEventListener("hashchange", offsetAnchor);
 
 window.setTimeout(offsetAnchor, 1);
