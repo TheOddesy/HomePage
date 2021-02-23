@@ -1,66 +1,66 @@
 
 :root {
-    --main: #900C3F ;
-    --mainText: Black;
-    --secondaryText:#5d5c61;
-    /* --background: #ececec; */
-    --background: #e7e7e7;
+  --main: #900C3F ;
+  --mainText: Black;
+  --secondaryText:#5d5c61;
+  /* --background: #ececec; */
+  --background: #e7e7e7;
 
-    --headerBackground:#e7e7e7;
-    --projectBackground: #e7e7e7;
+  --headerBackground:#e7e7e7;
+  --projectBackground: #e7e7e7;
 
-    --shadowProject: rgba(0, 0, 0, 0.5);
-    --shadowNav: rgba(0, 0, 0, 0);
-    --shadowDropDownGlobal: rgba(0, 0, 0, 0.15);
-    --switch-background-light:#ccc;
-  }
+  --shadowProject: rgba(0, 0, 0, 0.5);
+  --shadowNav: rgba(0, 0, 0, 0);
+  --shadowDropDownGlobal: rgba(0, 0, 0, 0.15);
+  --switch-background-light:#ccc;
+}
 
-  [data-theme="dark"]  {
-    --main: #f8ac20;
-    --mainText: #e7e7e7;
-    --secondaryText: #acacac;
-    /* --background: #303a49; */
-    --background: #171D23; 
+[data-theme="dark"]  {
+  --main: #f8ac20;
+  --mainText: #e7e7e7;
+  --secondaryText: #acacac;
+  /* --background: #303a49; */
+  --background: #171D23; 
 
-    --headerBackground:#1d242b;
-    --projectBackground:#1d242b;
-    
-    --shadowProject: #f8ac2080;
-    --shadowNav: #f8ac2080;
-    --shadowDropDownGlobal: rgba(0, 0, 0, 0.25);
-    --switch-background-dark:#5a5a5a;
-    --switch-background-dark:#535353;
-  }
+  --headerBackground:#1d242b;
+  --projectBackground:#1d242b;
+  
+  --shadowProject: #f8ac2080;
+  --shadowNav: #f8ac2080;
+  --shadowDropDownGlobal: rgba(0, 0, 0, 0.25);
+  --switch-background-dark:#5a5a5a;
+  --switch-background-dark:#535353;
+}
 
-  body {
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-family: 'Roboto Condensed', sans-serif; */
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
-    background-color: var(--background);
-    color: var(--mainText);
-    margin:0;
-  }
+body {
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  background-color: var(--background);
+  color: var(--mainText);
+  margin:0;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+ }
 
-  a:hover {
-    cursor: pointer;
-  }
+a:hover {
+  cursor: pointer;
+}
 
-  .fa {
-      text-decoration: none;
-      color: var(--main);
-      background: var(--projectBackground);
-  }
+.fa {
+  text-decoration: none;
+  color: var(--main);
+  background: var(--projectBackground);
+}
 
-  .fa:hover {
-    text-decoration: none;
-    color: var(--projectBackground);
-    background: var(--main);
-    cursor: pointer;
+.fa:hover {
+  text-decoration: none;
+  color: var(--projectBackground);
+  background: var(--main);
+  cursor: pointer;
 }
 
 #anchor {
