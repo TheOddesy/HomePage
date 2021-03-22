@@ -1,88 +1,85 @@
-  
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--headerBackground);
-    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2);
-    font-weight: 700;
-    z-index: 1;
-    }
-  
-  /* -------- */
-  .navContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Navigation */
-  
-  .nav a {
-    font-size: 1.2em;
-    color: var(--mainText);
-    border: 2px solid transparent;
-    padding: 5px 10px;
-    margin: 10px 10px;
-    float: left;
-  }
-  
-  .nav a:hover {
-    color: var(--main);
-    border: 2px solid var(--main);
-    box-shadow: 0 0px 5px 1px var(--shadowNav);
-    padding: 5px 10px;
-    margin: 10px 10px;
-  }
-  
-  /* Container and Switch */
-  .floatRight{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 400px;
-    margin: 0 40px 0 30px;
-  }
-  
-  .switchButtons {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-  }
-  
-  .switchButtons .fa {
-    color: var(--main);
-    background-color: transparent;
-    margin: 10px 5px 10px 5px;
-  }
-  
-  /* Home Button */
-  .homeButton a{
-    color: var(--main);
-    padding: 5px;
-    margin: 10px;
-    border: 2px solid var(--main);
-    font-size: 1.2em;
-  }
-  
-  .homeButton a:hover {
-    color: var(--headerBackground);
-    background-color: var(--main);
-    transition-delay: 0.05s;
-    transition-duration: 0.1s;
-  }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--headerBackground);
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  z-index: 1;
+}
 
-  /* Progress Bar */
+/* -------- */
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .progress-container {
-    width: 100%;
-    height: 2px;
-    background: var(--headerBackground);
-  }
-  
-  .progress-bar {
-    height: 2px;
-    background: var(--main);
-    width: 0%;
-  }
+/* Navigation */
+
+.nav a {
+  font-size: 1.2em;
+  color: var(--mainText);
+  border: 2px solid transparent;
+  padding: 0.3rem 0.6rem;
+  margin: 0.6rem;
+  float: left;
+}
+
+.nav a:hover {
+  color: var(--main);
+  border: 2px solid var(--main);
+  box-shadow: 0 0px 5px 1px var(--shadowNav);
+}
+
+/* Container and Switch */
+.floatRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  margin: 0 2.4rem 0 1.3rem;
+}
+
+.switchButtons {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.switchButtons .fa {
+  color: var(--main);
+  background-color: transparent;
+  margin: 0.6rem 0.3rem;
+}
+
+/* Home Button */
+.homeButton a {
+  color: var(--main);
+  padding: 0.3rem;
+  margin: 0.6rem;
+  border: 2px solid var(--main);
+  font-size: 1.2em;
+}
+
+.homeButton a:hover {
+  color: var(--headerBackground);
+  background-color: var(--main);
+  transition-delay: 0.05s;
+  transition-duration: 0.1s;
+}
+
+/* Progress Bar */
+
+.progress-container {
+  width: 100%;
+  height: 2px;
+  background: var(--headerBackground);
+}
+
+.progress-bar {
+  height: 2px;
+  background: var(--main);
+  width: 0%;
+}

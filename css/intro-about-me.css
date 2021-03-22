@@ -1,49 +1,52 @@
-  /* Intro */
+/* Intro */
 
-  .intro {
-    max-width: 550px;
-    min-width: 400px;
-    border: 3px solid var(--main);
-    border-radius:10px;
-    padding:5px 35px 10px 35px;
-    margin: 100px auto 0;
-  }
-  
-  .intro-line1 h1 {
-    font-size: 1.9em;
-    font-weight: 800;
-  }
-  
-  .intro-line2 h1 {
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-  
-  .software {
-    color: var(--background);
-    background: var(--main);
-    padding: 0px 5px;
-  }
-  
-  .intro-line3 h1 {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: var(--secondaryText);
-  }
-  
-  /* Aout Me */
-  
-  .aboutMe {
-    max-width: 550px;
-    min-width: 400px;
-    margin:50px auto;
-  }
+.intro {
+  max-width: 39rem;
+  min-width: 30rem;
+  border: 3px solid var(--main);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 6rem auto 0;
+}
 
-  /* For the dividing titles */
-  h2 { 
-    color: var(--background);
-    background-color: var(--main);
-    font-size: 1.5em;
-    width: fit-content;
-    padding: 5px;
-  }
+.intro-line1 h1 {
+  font-size: 1.9em;
+  font-weight: 800;
+  margin: 0;
+}
+
+.intro-line2 h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.software {
+  color: var(--background);
+  background: var(--main);
+  padding: 0 0.3rem;
+}
+
+.intro-line3 h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--secondaryText);
+  margin: 0;
+}
+
+/* Aout Me */
+
+.aboutMe {
+  max-width: 35rem;
+  min-width: 30rem;
+  margin: 3rem auto;
+}
+
+/* For the dividing titles */
+h2 {
+  color: var(--background);
+  background-color: var(--main);
+  font-size: 1.5em;
+  width: fit-content;
+  padding: 0.3rem;
+}
